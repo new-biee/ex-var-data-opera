@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình của sinh viên</title>
+</head>
+<body>
+<script>
+    let inputPhysical;
+    let inputChemistry;
+    let inputBiological;
+
+    inputPhysical = prompt("Nhập điểm Vật lý: ");
+    inputChemistry = prompt("Nhập điểm Hóa học: ");
+    inputBiological = prompt("Nhập điểm Sinh học: ");
+
+    let physical = parseInt(inputPhysical);
+    let chemistry = parseInt(inputChemistry);
+    let biological = parseInt(inputBiological);
+
+    let total = physical + chemistry + biological;
+
+    let average = total / 3;
+
+    document.writeln("Điểm trung bình là: " + average + " điểm." + "<br>");
+    document.writeln("Tổng điểm là: " + total + " điểm.");
+</script>
+</body>
+</html>
